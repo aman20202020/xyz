@@ -1,0 +1,9 @@
+pandas
+numpy
+sklearn
+flask
+gunicorn
+opencv-python
+tensorflow-cpu
+keras
+Jinja2
