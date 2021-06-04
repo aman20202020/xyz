@@ -7,3 +7,4 @@ opencv-python
 tensorflow-cpu
 keras
 Jinja2
+opencv-python-headless==4.2.0.32
