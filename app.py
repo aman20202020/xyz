@@ -28,7 +28,7 @@ from werkzeug.utils import secure_filename
 app = Flask(__name__)#, template_folder='/content/Untitled Folder')
 
 # Model saved with Keras model.save()
-MODEL_PATH ='malaria2.h5'
+MODEL_PATH ='model_vgg19.7z.001'
 
 # Load your trained model
 model = load_model(MODEL_PATH)
@@ -54,7 +54,7 @@ def prediction():
 	img = request.files['img']
 
 	img.save("img.jpg")
-	scale= ImageDataGenerator(rescale=1./255)
+	#scale= ImageDataGenerator(rescale=1./255)
 
 	image = cv2.imread("img.jpg")
 
