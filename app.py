@@ -12,7 +12,7 @@ import os
 import glob
 import re
 import numpy as np
-#from tensorflow.keras.preprocessing.image import ImageDataGenerator,load_img
+from tensorflow.keras.preprocessing.image import ImageDataGenerator,load_img
 
 # Keras
 from tensorflow.keras.applications.imagenet_utils import preprocess_input, decode_predictions
@@ -54,7 +54,7 @@ def prediction():
 	img = request.files['img']
 
 	img.save("img.jpg")
-	#img= ImageDataGenerator(rescale=1./255)
+	scale= ImageDataGenerator(rescale=1./255)
 
 	image = cv2.imread("img.jpg")
 
