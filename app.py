@@ -13,7 +13,6 @@ import glob
 import re
 import numpy as np
 from tensorflow.keras.preprocessing.image import ImageDataGenerator,load_img
-from PIL import Image
 
 # Keras
 from tensorflow.keras.applications.imagenet_utils import preprocess_input, decode_predictions
