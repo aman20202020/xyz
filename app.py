@@ -54,7 +54,7 @@ def prediction():
 	img = request.files['img']
 
 	img.save("img.jpg")
-	#scale= ImageDataGenerator(rescale=1./255)
+	scale= ImageDataGenerator(rescale=1./255)
 
 	image = cv2.imread("img.jpg")
 
