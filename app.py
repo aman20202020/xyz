@@ -54,9 +54,10 @@ def prediction():
 	img = request.files['img']
 
 	img.save("img.jpg")
-	scale= ImageDataGenerator(rescale=1./255)
+	#scale= ImageDataGenerator(rescale=1./255)
 
 	image = cv2.imread("img.jpg")
+	image/=255.0
 
 	image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 
