@@ -28,7 +28,7 @@ from werkzeug.utils import secure_filename
 app = Flask(__name__)#, template_folder='/content/Untitled Folder')
 
 # Model saved with Keras model.save()
-MODEL_PATH ='model_vgg19.7z.001'
+MODEL_PATH ='malariaNew.h5'
 
 # Load your trained model
 model = load_model(MODEL_PATH)
