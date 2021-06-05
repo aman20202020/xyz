@@ -56,19 +56,19 @@ def prediction():
 	img.save("img.jpg")
 	#scale= ImageDataGenerator(rescale=1./255)
 
-	image = cv2.imread("img.jpg")
-	'''test_image = image.load_img('img.jpg', target_size = (64, 64))
+	#image = cv2.imread("img.jpg")
+	test_image = image.load_img('img.jpg', target_size = (64, 64))
 	test_image = image.img_to_array(test_image)
 	image/=255.0
-	test_image = np.expand_dims(test_image, axis = 0)'''
+	test_image = np.expand_dims(test_image, axis = 0)
 	
-	image/=255.0
+	#image/=255.0
 
-	image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+	#image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 
-	image = cv2.resize(image, (64,64))
+	#image = cv2.resize(image, (64,64))
 
-	image = np.reshape(image, (1,64,64,3))
+	#image = np.reshape(image, (1,64,64,3))
 
 	pred = model.predict(image)
 
