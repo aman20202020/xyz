@@ -8,3 +8,4 @@ tensorflow-cpu
 keras
 Jinja2
 opencv-python-headless
+Pillow
