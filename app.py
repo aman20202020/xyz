@@ -71,7 +71,7 @@ def prediction():
 
 	#image = np.reshape(image, (1,64,64,3))
 
-	pred = model.predict(image)
+	pred = model.predict(test_image)
 
 	pred = np.argmax(pred,axis=1)
 
