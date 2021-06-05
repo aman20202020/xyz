@@ -59,7 +59,7 @@ def prediction():
 	#image = cv2.imread("img.jpg")
 	test_image = image.load_img('img.jpg', target_size = (64, 64))
 	test_image = image.img_to_array(test_image)
-	image/=255.0
+	#image/=255.0
 	test_image = np.expand_dims(test_image, axis = 0)
 	
 
